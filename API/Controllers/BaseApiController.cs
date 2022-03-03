@@ -17,14 +17,6 @@ namespace API.Controllers
         //Check if the controller has an instance of Imediator available, if so re-use, if not create the instance
         //could use constructor injection here instead
         protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
-        
-        // public BaseApiController(IMediator mediator)
-        // {
-        //     Mediator = mediator;
-        // }
-        // public BaseApiController(){
 
-        // }
-        // public IMediator Mediator { get; }
     }
 }
